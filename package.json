@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "16.2.6",
+    "next": "16.3.2",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },
@@ -19,6 +19,6 @@
     "typescript": "5.9.3"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": "24.x"
   }
 }
