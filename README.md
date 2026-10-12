@@ -27,4 +27,13 @@ Vercel ready Next.js homepage concept for Josh's Cookie Creations.
 4. Click **Deploy**.
 
 Vercel automatically provides the production URL to the site. For the correct social sharing image URL, add `NEXT_PUBLIC_SITE_URL` in Vercel project settings after the first deployment and set it to the final public URL.
+
+## Enable order inquiry emails
+
+The Request an Order form uses Resend from the server. Add these environment variables in Vercel before accepting live inquiries:
+
+- `RESEND_API_KEY`: a Resend API key with permission to send email.
+- `RESEND_FROM_EMAIL`: a sender on a domain verified in Resend, for example `Josh's Cookie Creations <orders@example.com>`.
+
+Inquiry emails are sent to Josh's confirmed business email. Without both variables, the endpoint deliberately returns an unavailable message and never displays a false success state.
 # joshscookiecreations.website
